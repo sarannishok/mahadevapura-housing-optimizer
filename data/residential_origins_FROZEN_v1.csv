@@ -1,0 +1,20 @@
+cluster_id,locality,representative_pocket,latitude,longitude,coordinate_type,confidence,dataset_version,status
+H1,Hoodi,Hoodi Main Road / Ashraya Layout,12.988803,77.711326,road-access proxy,High,FROZEN_V1,FROZEN
+H2,Hoodi,Basavanna Nagar / Hoodi Circle,12.9902,77.7179,residential pocket,High,FROZEN_V1,FROZEN
+H3,Hoodi,Seetharampalya / Graphite India Road,12.98137,77.708613,road-access proxy,High,FROZEN_V1,FROZEN
+D1,Doddanekkundi,Alpine Eco / Chinnapanahalli,12.972775,77.700484,society anchor,High,FROZEN_V1,FROZEN
+D2,Doddanekkundi,Ferns City / Ferns Paradise,12.97583,77.70109,society anchor,High,FROZEN_V1,FROZEN
+D3,Doddanekkundi,Doddanekkundi Main Road / central pocket,12.97926,77.69525,road-access proxy,High,FROZEN_V1,FROZEN
+K1,Kaggadasapura,Harsha Pride / Balaji Layout,12.98105,77.67894,society anchor,High,FROZEN_V1,FROZEN
+K2,Kaggadasapura,Varsova Layout / Kaggadasapura Main Road,12.985093,77.674801,residential pocket,High,FROZEN_V1,FROZEN
+K3,Kaggadasapura,Kaggadasapura Lake / southern Kaggadasapura,12.97678,77.67286,locality anchor,High,FROZEN_V1,FROZEN
+V1,Vibhutipura,Tata Sherwood / central Vibhutipura,12.97002,77.68696,society/pocket proxy,Medium,FROZEN_V1,FROZEN
+V2,Vibhutipura,Srinidhi Residency / Rasanna Colony,12.96816,77.68075,residential pocket,High,FROZEN_V1,FROZEN
+V3,Vibhutipura,Chitrakut Environs / Basavanagar,12.965912,77.679714,society anchor,High,FROZEN_V1,FROZEN
+B1,B. Narayanapura,Akash Nagar / inner B. Narayanapura,12.9968,77.687,residential pocket,Medium,FROZEN_V1,FROZEN
+B2,B. Narayanapura,DNR Casablanca / central B. Narayanapura,12.99421,77.68923,society anchor,High,FROZEN_V1,FROZEN
+B3,B. Narayanapura,NCC Maple Heights / A. Narayanapura-Pai Layout side,12.9981,77.6849,society/pocket proxy,High,FROZEN_V1,FROZEN
+R1,KR Puram,Devasandra interior,13.005383,77.699484,residential anchor,High,FROZEN_V1,FROZEN
+R2,KR Puram,Basavanapura / Devasandra Extension,13.0092,77.7108,locality proxy,High,FROZEN_V1,FROZEN
+R3,KR Puram,Old Madras Road access,13.008439,77.695293,road-access proxy,High,FROZEN_V1,FROZEN
+OFFICE,Office,BHIVE Premium / Brigade Metropolis,12.99214,77.70352,complex proxy,High,FROZEN_V1,FROZEN

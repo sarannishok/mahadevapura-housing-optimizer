@@ -1,0 +1,45 @@
+# V1 housing requirements config -- these are the CURRENT user's filters,
+# not hardcoded into the schema or any logic. A future user can swap these
+# values without touching src/housing_schema.py.
+#
+# NOTE: this file only stores threshold/config values. No filtering,
+# scoring, or classification code reads it yet -- that is a later,
+# separately-approved step. Nothing here collects or scores listings.
+
+hard_filters:
+  configuration: "1 BHK"
+  rent_max: 23000
+  gated_society_required: true
+  parking_type_required: "dedicated_closed"
+  property_age_max_years: 5
+  furnishing_required: "unfurnished"
+
+budget_bands:
+  target_max: 20000    # rent <= this -> "target"
+  stretch_max: 23000   # target_max < rent <= this -> "stretch"; above -> "reject"
+
+gym:
+  quality_tier_required: "premium"   # e.g. Cult-level; not yet scored/classified in V1
+  radius_km: 2
+
+availability:
+  status_categories:
+    - immediate
+    - within_7_days
+    - within_30_days
+    - over_30_days
+    - unknown
+  hard_filter_enabled: false   # do not hard-filter on availability in V1;
+                                # stored so a future move-in date can be applied dynamically
+
+target_localities:
+  - Hoodi
+  - B. Narayanapura
+  - Doddanekkundi
+  - KR Puram
+  - Kaggadasapura
+  - Vibhutipura
+
+society_amenities:
+  scored_in_v1: false
+  filtered_in_v1: false

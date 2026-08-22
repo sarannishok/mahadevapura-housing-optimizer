@@ -1,0 +1,33 @@
+# Config for the multi-day (Mon-Fri) batch traffic-aware weekday PREDICTION experiment.
+# This is a prediction dataset (Google's traffic model for each specified future
+# departure time), not historically observed traffic.
+#
+# cache_path intentionally matches the Monday-only run's cache, so Monday's 126
+# already-cached combinations are reused instead of re-fetched. output_csv_path
+# is a separate file so the Monday-only results file is never touched.
+
+origins_csv_path: "data/residential_origins_FROZEN_v1.csv"
+office_cluster_id: "OFFICE"
+
+departure_dates:
+  - "2026-08-24"  # Monday
+  - "2026-08-25"  # Tuesday
+  - "2026-08-26"  # Wednesday
+  - "2026-08-27"  # Thursday
+  - "2026-08-28"  # Friday
+
+timezone_offset: "+05:30"
+departure_times:
+  - "08:30"
+  - "08:45"
+  - "09:00"
+  - "09:15"
+  - "09:30"
+  - "09:45"
+  - "10:00"
+
+arrival_target_time: "10:20"
+traffic_model: "BEST_GUESS"
+
+cache_path: "data/interim/routes_cache.json"
+output_csv_path: "data/interim/batch_traffic_results_multiday.csv"

@@ -1,0 +1,8 @@
+# Config for the H1 -> OFFICE validation experiment.
+# departure_time must be a future ISO 8601 timestamp (Routes API requirement).
+# Chosen as a representative weekday morning departure to test against the 10:20 AM arrival target.
+
+origins_csv_path: "data/residential_origins_FROZEN_v1.csv"
+target_origin_id: "H1"
+office_cluster_id: "OFFICE"
+departure_time: "2026-08-24T09:45:00+05:30"

@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+.DS_Store
+
+# Generated API cache
+data/interim/routes_cache.json

@@ -1,0 +1,26 @@
+# Config for the batch traffic-aware weekday PREDICTION experiment
+# (18 frozen origins x OFFICE, 7 departure times each).
+#
+# This is a traffic-aware prediction dataset for a single representative
+# future weekday, not a log of historically observed traffic. Kept separate
+# from config/config.yaml so the H1 single-route experiment is unaffected.
+
+origins_csv_path: "data/residential_origins_FROZEN_v1.csv"
+office_cluster_id: "OFFICE"
+
+departure_date: "2026-08-24"  # representative weekday (Monday)
+timezone_offset: "+05:30"
+departure_times:
+  - "08:30"
+  - "08:45"
+  - "09:00"
+  - "09:15"
+  - "09:30"
+  - "09:45"
+  - "10:00"
+
+arrival_target_time: "10:20"
+traffic_model: "BEST_GUESS"
+
+cache_path: "data/interim/routes_cache.json"
+output_csv_path: "data/interim/batch_traffic_results.csv"
